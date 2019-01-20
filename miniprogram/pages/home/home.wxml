@@ -1,0 +1,71 @@
+<!--miniprogram/pages/home/home.wxml-->
+<text>miniprogram/pages/home/home.wxml</text>
+
+
+
+<view class="container">
+
+  <!-- 用户 openid -->
+  <view class="userinfo">
+     <!-- <button 
+      open-type="getUserInfo"
+      bindgetuserinfo="onGetUserInfo" 
+      class="userinfo-avatar" 
+      style="background-image: url({{avatarUrl}})"
+  ></button> -->
+       <button open-type="getUserInfo"
+      bindgetuserinfo="onGetUserInfo" 
+      class="userinfo-avatar" style="background-image: url({{avatarUrl}})"></button>
+      <!-- open-type="getUserInfo"
+      bindgetuserinfo="onGetUserInfo" 
+      class="userinfo-avatar" 
+      style="background-image: url({{avatarUrl}})" -->
+  <!-- ></button> -->
+
+    <text class="userinfo-nickname">当前用户：{{username}}</text>
+    <!-- <view>
+      <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
+    </view> -->
+  </view>
+
+
+  <!-- 上传信息 -->
+  <view class="uploader">
+    <view class="uploader-text" bindtap="doUpload">
+      <text>更新个人信息</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl}}">
+      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
+    </view>
+  </view>
+
+
+  <!-- search -->
+  <view class="uploader">
+    <navigator url="../search/search" open-type="navigate" class="uploader-text">
+      <text>搜索校友信息</text>
+    </navigator>
+  </view>
+
+  <!-- 新建云函数
+  <view class="uploader">
+    <navigator url="../addFunction/addFunction" open-type="navigate" class="uploader-text">
+      <text>快速新建云函数</text>
+    </navigator>
+  </view> -->
+
+</view>
+
+
+<!-- <view class="home">
+
+  <view class="doc-title zan-hairline--bottom"></view>
+  <view>
+    <text>登陆成功!</text>
+    <text>您好，{{username}}!</text>
+  </view> -->
+<view class="signin">
+  <!-- <button type="submit" catchtap="insertInformation">个人信息录入</button>
+    <button type="submit" catchtap="search">校友查询</button> -->
+  <button type="submit" catchtap="back">退出</button>
+</view>

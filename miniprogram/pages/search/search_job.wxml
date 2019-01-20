@@ -1,0 +1,33 @@
+<!--miniprogram/pages/search/search_job.wxml-->
+<!--<text>miniprogram/pages/search/search_job.wxml</text>
+
+ <view class="username">
+    <text>请输入要查询的工作：</text>
+    <input placeholder="" type="text" bindinput="search_job_input" />
+  </view>
+<button size="mini" type="default" bindtap="onQuery">查询</button>
+<text class="code" wx:if="{{queryResult}}">{{queryResult}}</text>
+-->
+<view class="jobsearch">
+  <view class="page__hd">
+  </view>
+  <view class="page__bd">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class="section">
+        <view class="username">请输入要查询的工作：</view>
+        <input type="text" placeholder="" bindinput="search_job_input" />
+      </view>
+      <view class="btn-area">
+        <view class="button-wrapper">
+          <button type="primary" formType="submit" class="primary" bindtap="onQuery">查询</button>
+        </view>
+        <view class="button-wrapper">
+          <button type="default" formType="submit" catchtap="back">返回</button>
+        </view>
+      </view>
+    </form>
+
+<text class="code" wx:if="{{queryResult}}">{{queryResult}}</text>
+
+  </view>
+</view>

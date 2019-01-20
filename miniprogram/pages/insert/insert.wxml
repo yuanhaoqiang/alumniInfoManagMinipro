@@ -1,0 +1,123 @@
+<!--miniprogram/pages/insert/insert.wxml-->
+<!--<text>miniprogram/pages/insert/insert.wxml</text>
+<view class="container">
+
+  <view class="name-text">
+    <text>姓名</text>
+    <input placeholder="请输入您的姓名" type="text" bindinput="nameinput" />
+  </view>
+
+  <view class="name-text">
+    <text>学号</text>
+    <input placeholder="请输入您的学号" type="number" bindinput="nameinput" />
+  </view>
+
+  <view class="name-text">
+    <text>邮箱</text>
+    <input placeholder="请输入您的邮箱" type="text" bindinput="nameinput" />
+  </view>
+
+  <view class="name-text">
+    <text>电话</text>
+    <input placeholder="请输入您的电话号码" type="number" bindinput="telinput" />
+  </view>
+
+  <view class="name-text">
+    <text>工作</text>
+    <input placeholder="请输入您的工作" type="text" bindinput="jobinput" />
+  </view>
+
+  <view class="button">
+    <button type="submit" catchtap="insertinformation">确认</button>
+    <button type="submit" catchtap="back">返回</button>
+  </view>
+</view>-->
+
+
+
+
+<view class="information">
+    <view class="page__hd">
+    </view>
+    <view class="page__bd">
+        <form bindsubmit="formSubmit" bindreset="formReset">
+            <view class="section">
+                <view class="name-text">姓名</view>
+                <input type="text" placeholder="请输入您的姓名"   bindinput="nameinput" />
+            </view>
+            <view class="section">
+                <view class="name-text">学号</view>
+                <input type="number" placeholder="请输入您的学号"   bindinput="numberinput" />
+            </view>
+            <view class="section">
+                <view class="name-text">邮箱</view>
+                <input type="text" placeholder="请输入您的邮箱" bindinput="emailinput" />
+            </view>
+            <view class="section">
+                <view class="name-text">电话</view>
+                <input type="number" placeholder="请输入您的电话号码"   bindinput="telinput" />
+            </view>
+            <view class="section">
+                <view class="name-text">工作</view>
+                <input type="text" placeholder="请输入您的工作" bindinput="jobinput" />
+            </view>
+            <view class="section">
+                <view class="name-text">公司</view>
+                <input type="text" placeholder="请输入您的公司" bindinput="companyinput" />
+            </view>
+            
+            
+            <view class="btn-area">
+                <view class="button-wrapper">
+                    <button type="primary" formType="submit" class="primary" catchtap="insertinformation">新建</button>
+                </view>
+                <view class="button-wrapper">
+                    <button type="primary" formType="submit" class="primary" catchtap="fixinformation">修改</button>
+                </view>
+                <view class="button-wrapper">
+                    <button type="default" formType="submit" catchtap="back">返回</button>
+                </view>
+            </view>
+        </form>
+    </view>
+</view>
+
+<!-- miniprogram/pages/insert/insert.wxml
+<text>miniprogram/pages/insert/insert.wxml</text>
+<view class="container">
+
+  <view class="name-text">
+    <text>姓名</text>
+    <input placeholder="请输入您的姓名" type="text" bindinput="nameinput" />
+  </view>
+
+  <view class="name-text">
+    <text>学号</text>
+    <input placeholder="请输入您的学号" type="number" bindinput="numberinput" />
+  </view>
+
+  <view class="name-text">
+    <text>邮箱</text>
+    <input placeholder="请输入您的邮箱" type="text" bindinput="emailinput" />
+  </view>
+
+  <view class="name-text">
+    <text>电话</text>
+    <input placeholder="请输入您的电话号码" type="number" bindinput="telinput" />
+  </view>
+
+  <view class="name-text">
+    <text>工作</text>
+    <input placeholder="请输入您的工作" type="text" bindinput="jobinput" />
+  </view>
+
+  <view class="name-text">
+    <text>公司</text>
+    <input placeholder="请输入您的公司" type="text" bindinput="companyinput" />
+  </view>
+
+  <view class="button">
+    <button type="submit" catchtap="insertinformation">确认</button>
+    <button type="submit" catchtap="back">返回</button>
+  </view>
+</view> -->

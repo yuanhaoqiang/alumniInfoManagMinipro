@@ -1,0 +1,57 @@
+<!--miniprogram/pages/login/login.wxml-->
+<!--  <text>miniprogram/pages/login/login.wxml</text>  -->
+<!-- <view class="login">
+  <view class="doc-title zan-hairline--bottom"></view>
+  <view class="username">
+    <text>用户名</text>
+    <input placeholder="用户名" type="text" bindinput="usernameinput" />
+  </view>
+  <view class="password">
+    <text>密码</text>
+    <input placeholder="密码" type="password" bindinput="passwordinput" />
+  </view>
+  <view class="signin">
+  
+    <button type="submit" catchtap="signin">登录</button>
+    <button type="submit" catchtap="register">注册</button>
+    <button type='submit' catchtap="quicklysignin">微信快速登录</button>
+
+     <text class="code" wx:if="{{queryResult}}">{{queryResult}}</text>
+
+  </view>
+</view> -->
+
+<view class="login">
+    <view class="page__hd">
+    </view>
+    <view class="page__bd">
+        <form bindsubmit="formSubmit" bindreset="formReset">
+            <view class="section">
+                <view class="username">用户名</view>
+                <input type="text" placeholder="用户名" id="username"  bindinput="usernameinput" />
+            </view>
+            <view class="section">
+                <view class="password">密码</view>
+                <input  type="password" placeholder="密码" id="password" bindinput="passwordinput" />
+            </view>
+            <view class="section">
+                <view class="remember">记住用户名和密码</view>
+                <view class="section_gap">
+                    <switch checked id="remind" bindchange="switchChange" />
+                </view>
+            </view>
+            <view class="btn-area">
+                <view class="button-wrapper">
+                    <button type="primary" formType="submit" class="primary" catchtap="signin">登录</button>
+                </view>
+                <view class="button-wrapper">
+                    <button type="default" formType="submit" catchtap="register">注册</button>
+                </view>
+                <view class="button-wrapper">
+                    <button type="default" catchtap="quicklysignin">微信接入登录</button>
+                </view>
+            </view>
+        </form>
+    </view>
+    <view class="page-footer" bindtap="tapnav"> 使用说明 </view>
+</view>

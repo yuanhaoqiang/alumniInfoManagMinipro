@@ -1,0 +1,57 @@
+<!--miniprogram/pages/search/search.wxml-->
+<text>miniprogram/pages/search/search.wxml</text>
+
+<view class="container">
+
+  <!-- 用户 openid -->
+  <view class="userinfo">
+    <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-avatar" style="background-image: url({{avatarUrl}})"></button>
+
+    <text class="userinfo-nickname">当前用户：{{username}}</text>
+    <!-- <view>
+      <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
+    </view> -->
+  </view>
+
+
+
+  <!-- search -->
+  <view class="uploader">
+    <navigator url="../search/search_num" open-type="navigate" class="uploader-text">
+      <text>学号查询</text>
+    </navigator>
+  </view>
+
+
+  <!-- search -->
+  <view class="uploader">
+    <navigator url="../search/search_name" open-type="navigate" class="uploader-text">
+      <text>姓名查询</text>
+    </navigator>
+  </view>
+
+  <!-- search -->
+  <view class="uploader">
+    <navigator url="../search/search_job" open-type="navigate" class="uploader-text">
+      <text>工作查询</text>
+    </navigator>
+  </view>
+
+  <!-- search -->
+  <view class="uploader">
+    <navigator url="../search/search_company" open-type="navigate" class="uploader-text">
+      <text>公司查询</text>
+    </navigator>
+  </view>
+
+</view>
+
+<!--<view class="signin">
+  <button type="submit" catchtap="back">退出</button>
+</view>-->
+
+<view class="btn-area">
+  <view class="button-wrapper">
+    <button type="primary" formType="submit" catchtap="back">退出登录</button>
+  </view>
+</view>

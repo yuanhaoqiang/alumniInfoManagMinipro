@@ -1,0 +1,29 @@
+{
+  "pages": [
+   
+    "pages/login/login",
+    "pages/search/search",
+    
+    "pages/register/register",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/insert/insert",
+    "pages/index/index",
+    "pages/home/home",
+    "pages/search/search_num",
+    "pages/search/search_name",
+    "pages/search/search_job",
+    "pages/search/search_company"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  }
+}
